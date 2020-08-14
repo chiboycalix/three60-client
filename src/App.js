@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Dashboard from '@Views/Dashboard';
+import Todo from '@Container/Todo/TodoLayout'
 
 const App = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/" component={Dashboard} />
+				<Route path="/" component={Todo} />
 			</Switch>
 		</Router>
 	);

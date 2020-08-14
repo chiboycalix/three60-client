@@ -33,7 +33,7 @@ module.exports = {
 				use: ['style-loader', 'css-loader'],
 			},
 			{
-				test: /\.(png|jpe?g|gif)$/i,
+				test: /\.(png|jpe?g|gif|svg)$/i,
 				use: [
 					{
 						loader: 'file-loader',
@@ -70,6 +70,8 @@ module.exports = {
 			'@App': path.resolve(__dirname, './', 'src/'),
 			'@Components': path.resolve(__dirname, './', 'src/Components/'),
 			'@Views': path.resolve(__dirname, './', 'src/Views/'),
+			'@Container': path.resolve(__dirname, './', 'src/Container/'),
+			'@Loader': path.resolve(__dirname, './', 'src/Loader/'),
 		},
 	},
 	plugins: [
